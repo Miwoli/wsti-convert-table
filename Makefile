@@ -3,7 +3,7 @@ VPATH=src:o_files
 
 __: main
 main : main.o ratio.o
-	$(compiler) o_files/main.o ./o_files/ratio.o -o converter.exe
+	$(compiler) o_files/main.o ./o_files/ratio.o -o convert-table.exe
 
 main.o : main.cpp
 	$(compiler) -c ./src/main.cpp -o ./o_files/main.o
